@@ -1,0 +1,87 @@
+.navbar-body {
+    width: 100vw;
+    height: 8vh;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-body div {
+    margin: 3rem;
+}
+
+.navbar-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-middle-selections {
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 400;
+    margin: 1rem;
+}
+
+.sale {
+    font-weight: 700;
+    color: #FF0101;
+}
+
+.nav-search {
+    height: 4vh;
+    width: 50vw;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    border: 1px solid gray;
+}
+
+.nav-search:focus {
+    outline: none;
+}
+
+.navbar-left {
+    font-family: "Cairo", sans-serif;
+    width: 7%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-logo {
+    font-family: 'Noto Serif', serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+
+#nav-logo:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.navbar-middle-selections:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.navbar-right {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-right svg {
+    color: black;
+    font-size: 20px;
+    margin: 0.75rem;
+}
+
+.navbar-right svg:hover {
+    opacity: 60%;
+    cursor: pointer;
+}

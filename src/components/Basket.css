@@ -1,0 +1,37 @@
+.basket-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.basket-header {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 40px;
+}
+
+.no-items-container {
+    width: 92vw;
+    height: 56vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 2px solid rgb(125, 125, 125);
+    border-bottom: 2px solid rgb(125, 125, 125);
+}
+
+.no-items-icon {
+    fill: rgb(125, 125, 125);
+    margin: 2rem;
+}
+
+.no-items-message {
+    color: rgb(125, 125, 125);
+    font-size: 20px;    
+}

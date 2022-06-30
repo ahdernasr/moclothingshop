@@ -1,0 +1,77 @@
+.bottoms-container {
+    width: 100vw;
+    height: 76vh;
+  }
+  
+  .bottoms-header {
+    width: 100vw;
+    height: 14vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bottoms-sort {
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  
+  .bottoms-sort div {
+    margin: 0 2rem;
+  }
+  
+  .bottoms-sort div:hover {
+    opacity: 70%;
+    cursor: pointer;
+  }
+  
+  .bottoms-items-container {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .bottoms-item-image-container {
+    width: 12vw;
+    height: 32vh;
+  }
+  
+  .bottoms-item-image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .bottoms-item-image:hover {
+    opacity: 80%;
+    cursor: pointer;
+  }
+  
+  .bottoms-item-description {
+    font: "Cairo", "sans-serif";
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bottoms-item-price {
+    font: "Cairo", "sans-serif";
+    font-weight: 700;
+    font-size: 17px;
+    color: black;
+    height: 3vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

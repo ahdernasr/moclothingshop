@@ -1,0 +1,35 @@
+.email-section-body {
+    width: 100vw;
+    height: 12vh;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-section-body input {
+    width: 35vw;
+    height: 50%;
+    padding: 0 1rem;
+    font-size: 20px;
+    margin: 0 0.5rem;
+}
+
+.email-section-body button {
+    width: 6vw;
+    height: 50%;
+    padding: 0 1rem;
+    font-size: 17px;
+    margin: 0 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    border: none
+}
+
+.email-section-body button:hover {
+    opacity: 80%;
+    cursor: pointer;
+}

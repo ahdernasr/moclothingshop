@@ -1,0 +1,75 @@
+.footer-body {
+    width: 100vw;
+    height: 50vh;
+    background-color: #95D3E0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-partition {
+    width: 33vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.left-partition p {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.middle-partition p {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+.middle-partition p:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.right-partition div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+.right-partition p {
+    font-size: 20px;
+}
+
+.right-partition p:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.right-partition svg {
+    fill: white;
+    margin: 0.25rem;
+}
+
+.right-partition svg:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+#logo {
+    font-family: 'Noto Serif', serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    padding: 0.5rem;
+    border-top: 1px solid white;
+}
+
+#logo:hover {
+    opacity: 80%;
+    cursor: pointer;
+}

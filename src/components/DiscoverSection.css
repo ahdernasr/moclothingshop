@@ -1,0 +1,42 @@
+.discover-section-body {
+    width: 100vw;
+    height: 88vh;
+    background-color: lightblue;
+    background-image: url("../images/homepage.jpeg");
+    background-repeat:repeat;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.discover-section-container {
+    width: 100vw;
+    height: 40%;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0 2rem 4rem;
+    font-family: "Cairo", "sans-serif";
+}
+
+.discover-section-container p {
+    color: white;
+    font-size: 96px;
+}
+
+.discover-section-container button {
+    width: 9vw;
+    height: 6vh;
+    background-color: white;
+    color: black;
+    font-size: 17px;
+    font-weight: 700;
+    transform: translate(30%, -35%);
+    border: none;
+}
+
+.discover-section-container button:hover {
+    opacity: 80%;
+    cursor: pointer;
+}

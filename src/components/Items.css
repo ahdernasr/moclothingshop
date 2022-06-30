@@ -1,0 +1,127 @@
+.items-container {
+    width: 100vw;
+    height: 76vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.items-container-left {
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items-container-right {
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.items-image-container {
+    width: 24vw;
+    height: 65vh;
+}
+
+.items-image {
+    height: 100%;
+    width: 100%;
+}
+
+.item-header {
+    font-size: 27px;
+}
+
+.item-price {
+    font-size: 22px;
+    color: black;
+    margin-top: 1rem;
+}
+
+.item-reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.reviews-header { 
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.item-quantity {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.quantity-change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-change button {
+    border-radius: 1rem;
+    width: 1rem;
+    height: 1rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.quantity-change button:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.quantity-change h1 {
+    font-size: 15px;
+}
+
+.item-basket-add button {
+    width: 10vw;
+    height: 5vh;
+    background-color: #95D3E0;
+    color: white;
+    font-size: 18px;
+    border-radius: 1rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.item-basket-add button:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.item-description {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item-description-header {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    width: 100%;
+}
+
+.item-description-text {
+    color: black;
+    font-size: 15px;
+}

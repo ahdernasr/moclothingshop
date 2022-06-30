@@ -1,0 +1,15 @@
+.discount-bar-body {
+    width: 100vw;
+    height: 4vh;
+    background-color: #FF0101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount-bar-body h1 {
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 400;
+}
