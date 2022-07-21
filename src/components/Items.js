@@ -1,44 +1,127 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Items.css";
+import { useParams } from "react-router";
+import itemData from "../database.json";
+import sizeChart from "../sizechart.jpeg";
 
-const Items = () => {
+const Items = (props) => {
+  let { itemId } = useParams();
+  const [quantity, setQuantity] = useState(1);
+
+  let object;
+  function findObject() {
+    for (let items in itemData) {
+      let searchObject = itemData[items].find((item) => item.id == itemId);
+      if (searchObject) {
+        object = JSON.parse(JSON.stringify(searchObject));
+      }
+    }
+  }
+
+  let starsText = "";
+  function setStars() {
+    for (let i = 0; i < object.reviews; i++) {
+      starsText = starsText + "★";
+    }
+    for (let i = 0; i < 5 - object.reviews; i++) {
+      starsText = starsText + "☆";
+    }
+  }
+
+  let sizeOptions = `<select id="size-select" name="size-select">`;
+  function createSizeOptions() {
+    {
+      object.size_options.map((size) => {
+        sizeOptions += `<option value=${size}>${size}</option>;`;
+      });
+    }
+    sizeOptions += `</select>`;
+  }
+
+  findObject();
+  setStars();
+  createSizeOptions();
+
+  function addToBasket(id, quantity, size) {
+    let newBasketItemsArray = props.basketItemsArray;
+    newBasketItemsArray.push({ id: id, quantity: quantity, size: size });
+    props.setBasketItemsArray(newBasketItemsArray);
+  }
+
   return (
     <div className="items-container">
       <div className="items-container-left">
         <div className="items-image-container">
-          <img id="summer-fragrance" className="items-image"></img>
+          <img
+            src={`../images/${object.image_url}`}
+            className="items-image"
+          ></img>
         </div>
       </div>
       <div className="items-container-right">
-        <div className="item-header">Summer sexy fragrance package</div>
-        <div className="item-price">34.99 CAD</div>
+        <div className="item-header">{object.name}</div>
+        <div className="item-price">
+          {parseInt(object.price) < parseInt(object.original_price) && (
+            <p className="tops-item-price">
+              <span className="before-sale-price">{object.original_price}</span>
+              <span className="after-sale-price">{object.price} CAD</span>
+            </p>
+          )}
+          {parseInt(object.price) == parseInt(object.original_price) && (
+            <p className="tops-item-price">{object.price} CAD</p>
+          )}
+        </div>
         <div className="item-reviews">
           <div className="reviews-header">Reviews</div>
-          <div className="reviews-stars">★★★☆☆     (8)</div>
+          <div className="reviews-stars">
+            {starsText} ({object.reviews_number})
+          </div>
         </div>
-        <div className="item-size-select">
-          <select name="size-select">
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-          </select>
+        <div className="size-and-chart">
+          <div
+            className="item-size-select"
+            dangerouslySetInnerHTML={{ __html: sizeOptions }}
+          ></div>
+          <div className="size-chart"><a href={sizeChart} download="TEMPUS Size Chart">Size chart</a></div>
         </div>
         <div className="item-quantity">
-            <div className="quantity-header">Select Quantity</div>
-            <div className="quantity-change">
-                <button>+</button>
-                <h1>1</h1>
-                <button>-</button>
-            </div>
+          <div className="quantity-header">Select Quantity</div>
+          <div className="quantity-change">
+            <button
+              onClick={() => {
+                setQuantity(quantity + 1);
+              }}
+            >
+              +
+            </button>
+            <h1>{quantity}</h1>
+            <button
+              onClick={() => {
+                quantity > 1
+                  ? setQuantity(quantity - 1)
+                  : setQuantity(quantity);
+              }}
+            >
+              -
+            </button>
+          </div>
         </div>
         <div className="item-basket-add">
-            <button>Add to basket</button>
+          <button
+            onClick={() => {
+              addToBasket(
+                object.id,
+                quantity,
+                document.getElementById("size-select").value
+              );
+            }}
+          >
+            Add to basket
+          </button>
         </div>
         <div className="item-description">
-            <div className="item-description-header">Description</div>
-            <div className="item-description-text">These fragrances will get you compliments from anyone around you! Made with cedarwood, jasmine, citrus and sandalwood to make the ultimate light fragrances for a hot day and breezy party in the evening.</div>
+          <div className="item-description-header">Description</div>
+          <div className="item-description-text">{object.description}</div>
         </div>
       </div>
     </div>

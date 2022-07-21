@@ -1,37 +1,230 @@
 .basket-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.basket-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 61vh;
+  margin-bottom: 4.5vh;
 }
 
 .basket-header {
-    width: 100vw;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 40px;
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 40px;
 }
 
 .no-items-container {
-    width: 92vw;
-    height: 56vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-top: 2px solid rgb(125, 125, 125);
-    border-bottom: 2px solid rgb(125, 125, 125);
+  width: 72vw;
+  height: 61vh;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
+  /* border: 2px solid rgb(125, 125, 125); */
+  overflow: scroll;
 }
 
 .no-items-icon {
-    fill: rgb(125, 125, 125);
-    margin: 2rem;
+  fill: rgb(125, 125, 125);
+  margin: 10rem 0 1rem 0;
 }
 
 .no-items-message {
-    color: rgb(125, 125, 125);
-    font-size: 20px;    
+  color: rgb(125, 125, 125);
+  font-size: 20px;
+}
+
+.basket-item {
+  width: 65vw;
+  height: 10vh;
+  /* border: 1px solid rgb(125, 125, 125); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  background-color: rgb(251, 249, 249);
+  border-radius: 1rem;
+}
+
+.basket-item-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.basket-item-left div {
+  margin: 0 1.5rem;
+}
+
+.basket-item-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.basket-item-image-container {
+  width: 6vh;
+  height: 8vh;
+  border-radius: 0.5rem; 
+}
+
+.basket-item-image {
+  width: 6vh;
+  height: 8vh;
+  border-radius: 0.5rem; 
+}
+
+.basket-item-text {
+  color: #000000;
+}
+
+.basket-item-price {
+  margin: 0 1rem;
+  color: #000000;
+}
+
+.basket-item-quantity {
+  margin: 0 1rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid rgb(125, 125, 125);
+  border-radius: 1.5rem;
+}
+
+.basket-item-remove {
+  margin: 0 1rem;
+  fill: #ff0101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.basket-item-remove {
+  fill: #ff0101;
+}
+
+.basket-item-remove:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.checkout-container {
+  border: 2px solid rgb(125, 125, 125);
+  height: 55vh;
+  width: 18vw;
+  margin: 0 1rem;
+  padding: 2vh 2vw;
+}
+
+.checkout-summary {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.checkout-price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 18vw;
+}
+
+.checkout-total {
+  margin: 1rem 0;
+  padding: 0 0.25rem;
+  border-top: 1px solid rgb(125, 125, 125);
+  border-bottom: 1px solid rgb(125, 125, 125);
+}
+
+.checkout-promo {
+  width: 18vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-promo input {
+  margin: 1rem 0;
+  padding: 0.5vh 1vw;
+  border: 1px solid rgb(125, 125, 125);
+  width: 14vw;
+}
+
+.checkout-promo button  {
+    width: 1.5vw;
+    height: 2.5vh;
+    background-color: rgb(125, 125, 125);
+    color: black;
+    border: none;
+    margin: 0 0.5rem;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout-promo button:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.checkout-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18vw;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.checkout-button-container button {
+  width: 16vw;
+  height: 7vh;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-button-container button:hover {
+  cursor: pointer;
+  opacity: 70%;
+}
+
+
+.paypal-logo {
+  font-family: Verdana, Tahoma;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.paypal-logo i:first-child {
+  color: #253b80;
+}
+
+.paypal-logo i:last-child {
+  color: #179bd7;
+}
+
+.paypal-logo { /* Used from open source CodePen */
+  display: inline-block;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
+  font-size: 20px;
+}
+
+.stripe { 
+    fill: #6772e5;
 }

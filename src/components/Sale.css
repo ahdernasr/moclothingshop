@@ -1,77 +1,128 @@
 .sale-container {
-    width: 100vw;
-    height: 76vh;
-  }
-  
-  .sale-header {
-    width: 100vw;
-    height: 14vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .sale-sort {
-    width: 100vw;
-    height: 12vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-  }
-  
-  .sale-sort div {
-    margin: 0 2rem;
-  }
-  
-  .sale-sort div:hover {
-    opacity: 70%;
-    cursor: pointer;
-  }
-  
-  .sale-items-container {
-    width: 100vw;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  
-  .sale-item-image-container {
-    width: 12vw;
-    height: 32vh;
-  }
-  
-  .sale-item-image {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .sale-item-image:hover {
-    opacity: 80%;
-    cursor: pointer;
-  }
-  
-  .sale-item-description {
-    font: "Cairo", "sans-serif";
-    font-weight: 700;
-    font-size: 18px;
-    color: black;
-    height: 6vh;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .sale-item-price {
-    font: "Cairo", "sans-serif";
-    font-weight: 700;
-    font-size: 17px;
-    color: black;
-    height: 3vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  width: 100vw;
+  height: 83.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sale-header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.sale-header h1 {
+  font-size: 30px;
+  margin: 0 3rem;
+}
+
+.sale-header span {
+  color:rgb(125, 125, 125)
+}
+
+.sale-sort {
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid rgb(125, 125, 125);
+  border-bottom: 1px solid rgb(125, 125, 125);
+}
+
+.sale-sort button {
+  margin: 0 0.75rem;
+  padding: 0.25 1rem;
+  width: 7vw;
+  height: 2.25vw;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.sale-sort button:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.button-selected {
+  background-color:rgb(189, 189, 189);
+}
+
+.sale-sort label {
+  margin: 0 1.5rem 0 3rem;
+}
+
+.sale-sort div:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.sale-items-container {
+  width: 80vw;
+  height: 62vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  overflow: auto;
+}
+
+.sale-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1.5rem 3rem;
+}
+
+.sale-item-image-container {
+  width: 20vw;
+  height: 42vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sale-item-image {
+  width: 16vw;
+  height: 42vh;
+}
+
+.sale-item-image:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.sale-item-description {
+  font: "Cairo", "sans-serif";
+  font-weight: 700;
+  font-size: 18px;
+  color: black;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+}
+
+.sale-item-price {
+  font: "Cairo", "sans-serif";
+  font-weight: 700;
+  font-size: 17px;
+  color: black;
+  height: 3vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.before-sale-price {
+  text-decoration: line-through;
+}
+
+.after-sale-price {
+  color: #ff0101;
+  margin: 0 0 0 0.5rem;
+}

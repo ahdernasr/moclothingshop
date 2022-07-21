@@ -1,7 +1,6 @@
 .items-container {
     width: 100vw;
-    height: 76vh;
-    border: 1px solid black;
+    height: 84vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -28,11 +27,14 @@
 .items-image-container {
     width: 24vw;
     height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .items-image {
-    height: 100%;
-    width: 100%;
+    width: 24vw;
+    height: 65vh;
 }
 
 .item-header {
@@ -124,4 +126,20 @@
 .item-description-text {
     color: black;
     font-size: 15px;
+}
+
+.size-and-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.size-chart a { 
+    color: #257888;
+}
+
+.size-chart {
+    opacity: 70%;
+    cursor: pointer;
+    margin: 0 0.75rem;
 }

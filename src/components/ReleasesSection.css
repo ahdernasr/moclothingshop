@@ -28,14 +28,22 @@
   align-items: center;
 }
 
+.releases-section-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .releases-section-item-image-container {
   width: 12vw;
   height: 32vh;
 }
 
 .releases-section-item-image {
-  width: 100%;
-  height: 100%;
+  width: 12vw;
+  height: 32vh;
+  display: block;
 }
 
 .releases-section-item-image:hover {
@@ -46,11 +54,15 @@
 .releases-section-item-description {
   font: "Cairo", "sans-serif";
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
+  text-align: center;
   color: #ffffff;
   height: 6vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 12vw;
+  line-height: 110%;
 }
 
 .releases-section-item-price {

@@ -1,0 +1,229 @@
+{
+    "tops": [
+        {   
+            "id": "T1",
+            "name": "Camp collar spotted shirt in yellow",
+            "price": "39.99",
+            "original_price": "39.99",
+            "description": "Yellow Camp-Collar printed cotton-twill shirt. Made of a cotton polyester tcnology blend to provide a durable aired experience. ",
+            "reviews": 4,
+            "reviews_number": 8,
+            "sale": false,
+            "size_options": ["S", "M", "L", "XL"],
+            "image_url": "yellow-shirt-front.jpeg",
+            "new_release": true
+        },
+        {   
+            "id": "T2",
+            "name": "Cotton tank-top in gray",
+            "price": "18.99",
+            "original_price": "18.99",
+            "description": "The perfect tank top for any occasion made of blue cotton from New Zealand. Wear this tank top at home or to a party and sitll look and feel better than everyone else.",
+            "reviews": 5,
+            "reviews_number": 13,
+            "sale": false,
+            "size_options": ["S", "M", "L", "XL"],
+            "image_url": "tank-top-front.jpeg"
+        },
+        {   
+            "id": "T3",
+            "name": "Camp collar floral shirt in red",
+            "price": "34.99",
+            "original_price": "39.99",
+            "description": "Red Camp-Collar printed cotton-twill shirt with floar prints. AMde of a cotton polyester technology blend to provide a durable aired experience.",
+            "reviews": 3,
+            "reviews_number": 4,
+            "sale": true,
+            "size_options": ["S", "M", "L", "XL"],
+            "image_url": "red-shirt-front.jpeg"
+        },
+        {   
+            "id": "T4",
+            "name": "Cotton over-sized t-shirt in black ",
+            "price": "24.99",
+            "original_price": "24.99",
+            "description": "This simply designed black t-shirt is one of our most popular products at Tempus Clothing due to how it joins comfort, style and durability, all in a simple over-size sillhouette",
+            "reviews": 5,
+            "reviews_number": 22,
+            "sale": false,
+            "size_options": ["S", "M", "L", "XL"],
+            "image_url": "black-tshirt-front.jpeg"
+        },
+        {   
+            "id": "T5",
+            "name": "'New york' striped t-shirt orange/white",
+            "price": "44.99",
+            "original_price": "44.99",
+            "description": "Show your love to New York and its citizens by wearing our crafted orange and white tee, with a special striped design to create one of our most unique looks at Tempus.",
+            "reviews": 5,
+            "reviews_number": 15,
+            "sale": false,
+            "size_options": ["S", "M", "L", "XL"],
+            "image_url": "orange-tshirt-front.jpeg"
+        },
+        {   
+            "id": "T6",
+            "name": "Knited tank-top in multicolors",
+            "price": "34.99",
+            "original_price": "44.99",
+            "description": "Our exclusive knitted tank-top's special design provide a unique multi-colored look while providing warmth for your core to keep you stylish and comfortable in your adventures",
+            "reviews": 5,
+            "reviews_number": 14,
+            "sale": true,
+            "size_options": ["S", "M", "L", "XL"],
+            "image_url": "knitted-tanktop-front.jpeg"
+        }
+    ],
+
+    "bottoms": [
+        {   
+            "id": "B1",
+            "name": "Cotton jersey shorts in orange",
+            "price": "24.99",
+            "original_price": "24.99",
+            "description": "These orange pleated shorts are made of a high quality cotton polyester blend from Pakistan, A perfect piece to look stylish during the summer while feeling breezy.",
+            "reviews": 4,
+            "reviews_number": 19,
+            "sale": false,
+            "size_options": ["S", "M", "L", "XL"],
+            "image_url": "orange-shorts-front.jpeg"
+        },
+        {   
+            "id": "B2",
+            "name": "Cotton polyester shorts in beige/orange",
+            "price": "29.99",
+            "original_price": "29.99",
+            "description": "These beige shorts are made of a high quality cotton polyester blend from Pakistan. A perfect piece to look stylish during the summer while feeling breezy.",
+            "reviews": 5,
+            "reviews_number": 12,
+            "sale": false,
+            "size_options": ["S", "M", "L", "XL"],
+            "image_url": "shorts-front-1.jpeg"
+        },
+        {   
+            "id": "B3",
+            "name": "Cotton polyester shorts in orange/blue",
+            "price": "29.99",
+            "original_price": "39.99",
+            "description": "These patterned orange blue shorts are made of a high quality cotton blend from Pakistan, A perfect piece to look stylish during the summer while feeling breezy.",
+            "reviews": 5,
+            "reviews_number": 16,
+            "sale": true,
+            "size_options": ["S", "M", "L", "XL"],
+            "image_url": "shorts-front-2.jpeg"
+        },
+        {   
+            "id": "B4",
+            "name": "Denim joggers in navy blue",
+            "price": "59.99",
+            "original_price": "59.99",
+            "description": "These exclusive jooggers are designed with an cotton interior and a denim exterior to obtain maximum comfort while still being able to wear denim.",
+            "reviews": 3,
+            "reviews_number": 5,
+            "sale": false,
+            "size_options": ["S", "M", "L", "XL"],
+            "image_url": "denim-joggers-front.jpeg",
+            "new_release": true
+        },
+        {   
+            "id": "B5",
+            "name": "Denim cargo trousers in dark green",
+            "price": "29.99",
+            "original_price": "39.99",
+            "description": "We combined two customer favourites, Denim and Cargo trousers, to make this exclusive hybrid of comfort, style, and uniqueness.",
+            "reviews": 2,
+            "reviews_number": 26,
+            "sale": true,
+            "size_options": ["S", "M", "L", "XL"],
+            "image_url": "denim-cargo-trousers-front.jpeg"
+        },
+        {   
+            "id": "B6",
+            "name": "Casual cotton joggers in light green",
+            "price": "79.99",
+            "original_price": "79.99",
+            "description": "Simple but stylish, comfortable but durable. These 100% cotton joggers are designed for your everyday needs being carried out with maximum comfort, and of course, maximum style.",
+            "reviews": 5,
+            "reviews_number": 12,
+            "sale": false,
+            "size_options": ["S", "M", "L", "XL"],
+            "image_url": "green-jogger-front.jpeg"
+        }
+    ],
+
+    "accessories": [
+        {   
+            "id": "A1",
+            "name": "Multi-purpose bandana in dark green",
+            "price": "19.99",
+            "original_price": "24.99",
+            "description": "Bandanas are a versatile yet classic accessory that suit every gentleman when worn the right way. Crafted from 100% persian cotton and featuring a real forrest green paisley print, it adds a stylish twist to your outfits.",
+            "reviews": 5,
+            "reviews_number": 16,
+            "sale": true,
+            "size_options": ["Kids", "Adults"],
+            "image_url": "bandana.jpeg"
+        },
+        {   
+            "id": "A2",
+            "name": "Knitted sunhat in beige",
+            "price": "24.99",
+            "original_price": "24.99",
+            "description": "Tempus has selected the finest material to realize this garment. enjoy the sun with this handcrafted patterned straw hat while looking stylish. take care of your Tempus garment by following the care instructions featured on the garment composition label and by choosing high standard dry-cleaners.",
+            "reviews": 5,
+            "reviews_number": 10,
+            "sale": false,
+            "size_options": ["Kids", "Adults"],
+            "image_url": "hat.jpeg"
+        },
+        {   
+            "id": "A3",
+            "name": "Summer sexy fragrance",
+            "price": "29.99",
+            "original_price": "39.99",
+            "description": "These fragerances will get you compliments from anyone around you! Made with cedarwood, jasmine, citrus and sandalwood to make the ultimate light fragrances for a hot day and breezy party in the evening.",
+            "reviews": 5,
+            "reviews_number": 3,
+            "sale": false,
+            "size_options": ["50ml", "100ml", "150ml", "200ml"],
+            "image_url": "perfume.jpeg"
+        },
+        {   
+            "id": "A4",
+            "name": "Wayfarer aluminium sunglasses in black",
+            "price": "79.99",
+            "original_price": "79.99",
+            "description": "With aluminium sides and a high quality polarising filter made from our very own factories in Berlin, Germany, these sunglasses are the perfect balance between style and comfort.",
+            "reviews": 5,
+            "reviews_number": 7,
+            "sale": false,
+            "size_options": ["One Size"],
+            "image_url": "sunglasses.jpeg",
+            "new_release": true
+        },
+        {   
+            "id": "A5",
+            "name": "Knitted winter cap in brown and white",
+            "price": "14.99",
+            "original_price": "19.99",
+            "description": "Featuring a hand knit but reliable design and build, this winter cap is bound to keep you warm but comfortable at any time of the year, especially in Canadian winters. ",
+            "reviews": 3,
+            "reviews_number": 9,
+            "sale": true,
+            "size_options": ["Kids", "Adults"],
+            "image_url": "wintercap.jpeg"
+        },
+        {   
+            "id": "A6",
+            "name": "Snoopy  swim shorts in multicolors",
+            "price": "29.99",
+            "original_price": "29.99",
+            "description": "These swimshorts pay homage to the well know cartoon Snoopy while reamining stylish and comfortable for your swimming adventures.",
+            "reviews": 4,
+            "reviews_number": 18,
+            "sale": false,
+            "size_options": ["Kids", "Adults"],
+            "image_url": "swimshorts.jpeg"
+        }
+    ]
+}

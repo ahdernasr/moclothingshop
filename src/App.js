@@ -11,14 +11,20 @@ import Accessories from "./components/Accessories.js"
 import Sale from "./components/Sale.js"
 import Items from "./components/Items.js"
 import Basket from "./components/Basket.js"
+import InfoBar from "./components/InfoBar.js"
+import Contact from "./components/Contact.js"
+import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
+  const [ basketItemsArray, setBasketItemsArray] = useState([]);
+
   return (
     <div className="App">
-      <Router>
+      <Router onUpdate={() => window.scrollTo(0, 0)}>
         <DiscountBar />
         <Navbar />
+        <InfoBar />
         <Routes>
           <Route
             exact
@@ -35,8 +41,9 @@ function App() {
           <Route path="/bottoms" element={<Bottoms />}></Route>
           <Route path="/accessories" element={<Accessories />}></Route>
           <Route path="/sale" element={<Sale />}></Route>
-          <Route path="/items" element={<Items />}></Route>
-          <Route path="/basket" element={<Basket />}></Route>
+          <Route path="/items/:itemId" element={<Items basketItemsArray={basketItemsArray} setBasketItemsArray={setBasketItemsArray}/>}></Route>
+          <Route path="/basket" element={<Basket basketItemsArray={basketItemsArray} setBasketItemsArray={setBasketItemsArray}/>}></Route>
+          <Route path="/contactus" element={<Contact />}></Route>
         </Routes>
         <EmailSection />
         <Footer />
